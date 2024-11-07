@@ -1,8 +1,8 @@
-### The significance of union and intersection types in Typescript.
+# The significance of union and intersection types in Typescript.
 - union types and intersection types stand out for their ability to help manage complex data structures, improve code maintainability, and ensure better type safety
 
 ## Union type
-# A union type allows a variable or parameter to hold multiple types
+### A union type allows a variable or parameter to hold multiple types
 
 - Example
 - If we want to write string,boolen and number in a variable , without typescript it is not possible. union type gives this ability to wtrite complex and managable data structure
@@ -13,11 +13,11 @@ value = 100;
 value = false;  
 
 ```
-# Why Union Types are Useful
+### Why Union Types are Useful
 -Flexibility: Allows you to specify multiple possible types for a variable or function argument.
 -Type Safety: TypeScript ensures that only the specified types are assigned to variables, preventing runtime errors.
 
-# When to Use Union Types?
+### When to Use Union Types?
 - We need a variable or function parameter that can accept multiple types.
 - We're working with APIs or libraries where a value might return different types.
 - We're dealing with user input or any other data that could be one of several types.
@@ -35,7 +35,7 @@ function greet(person: string | string[]) {
 
 
 ## Intersection type
-# An intersection type combines multiple types into one
+### An intersection type combines multiple types into one
 - With intersection types, we can create more complex types by merging multiple types together, ensuring that an object meets multiple criteria.
 -Example
 
@@ -54,11 +54,11 @@ const employee: EmployeeProfile = {
 };
 ```
 
-# Why Intersection Types are Useful:
+### Why Intersection Types are Useful:
 - Combining Multiple Types: You can merge different types to create a more complex, customized object that satisfies multiple conditions.
 - Enforcing Complex Structures: Intersection types help you define objects that need to satisfy multiple contracts, improving data integrity.
 
-# When to Use Intersection Types?
+### When to Use Intersection Types?
 
 - We need to combine multiple types into a single, more complex type.
 - We are working with objects that need to satisfy multiple conditions.
